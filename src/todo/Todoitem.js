@@ -1,8 +1,18 @@
 import React from 'react'
+import  Proptypes from 'prop-types'
+/*
+import Todolist from "./todolist";
+*/
 
-export default function Todoitem({todo,index}) {
-    return <li>
+function Todoitem({todo,index}) {
+    return (<li>
         <strong>{index+1}</strong>
         {todo.title}
-    </li>
+    </li>)
 }
+
+Todoitem.propTypes={
+    todo: Proptypes.object.isRequired,
+    index: Proptypes.number
+}
+export default Todoitem
