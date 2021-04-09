@@ -3,7 +3,13 @@ import Todolist from "./todo/todolist";
 
 function App() {
 
-    const todos = []
+    const todos = [
+        {id:1, completed: false, title: 'By chicken},
+        {id:1, completed: false, title: 'By chicken},
+        {id:1, completed: false, title: 'By chicken},
+
+
+    ]
     return (<div className='wrapper'>
         <h1>React tutorial</h1>
         <Todolist />
