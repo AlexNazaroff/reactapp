@@ -12,7 +12,7 @@ export default function Todolist(props) {
     return (
         <ul style={styles.ul}>
             {props.todos.map(todo=>{
-                return <Todoitem todo={todo}/>
+                return <Todoitem todo={todo} key={todo.id}/>
             })}
         </ul>
     )
