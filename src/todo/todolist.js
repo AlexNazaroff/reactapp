@@ -8,7 +8,7 @@ const styles = {
         padding: 0
     }
 }
-export default function Todolist() {
+export default function Todolist(props) {
     return (
         <ul style={styles.ul}>
             <Todoitem/>
