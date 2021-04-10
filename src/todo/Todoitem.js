@@ -18,6 +18,7 @@ const styles = {
 
 
 function Todoitem({todo, index,onChange}) {
+    console.log('todo', todo)
     return (<li style={styles.li}>
         <span>
             <input type="checkbox" style={styles.input} onChange={() => onChange(todo.id)}/>

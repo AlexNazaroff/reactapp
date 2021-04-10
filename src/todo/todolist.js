@@ -20,7 +20,7 @@ function Todolist(props) {
     )
 }
 Todolist.propTypes={
-    todos: Proptypes.arrayOf(Proptypes.object).isRequired
+    todos: Proptypes.arrayOf(Proptypes.object).isRequired,
     onToggle: Proptypes.func.isRequired
 }
 
