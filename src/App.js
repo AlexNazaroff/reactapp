@@ -1,6 +1,7 @@
 import React from 'react'
 import Todolist from "./todo/todolist";
 import Context from "./context";
+import AddTodo from "./todo/AddTodo";
 
 function App() {
     const [todos, setTodos] = React.useState([
@@ -30,6 +31,7 @@ function App() {
 
         <div className='wrapper'>
             <h1>React tutorial</h1>
+            <AddTodo></AddTodo>
             {todos.length ? <Todolist todos={todos} onToggle={toggleTodo}/> : <p>No todos</p>
             }
         </div>
