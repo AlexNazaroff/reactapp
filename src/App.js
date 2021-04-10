@@ -2,7 +2,7 @@ import React from 'react'
 import Todolist from "./todo/todolist";
 
 function App() {
-
+    const q = React.useState
     let todos = [
         {id:1, completed: false, title: 'By chicken'},
         {id:2, completed: false, title: 'By gamburger'},
