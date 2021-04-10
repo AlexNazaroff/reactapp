@@ -22,7 +22,7 @@ function App() {
     }
 
     function removeTodo(id) {
-        setTodos(todos.filter(todo => todo.id !== id ))
+        setTodos(todos.filter(todo => todo.id !== id))
     }
 
 
@@ -30,7 +30,8 @@ function App() {
 
         <div className='wrapper'>
             <h1>React tutorial</h1>
-            <Todolist todos={todos} onToggle={toggleTodo}/>
+            {todos.length ? <Todolist todos={todos} onToggle={toggleTodo}/> : <p>No todos</p>
+            }
         </div>
 
     </Context.Provider>)
