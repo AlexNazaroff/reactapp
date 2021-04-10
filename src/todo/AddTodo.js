@@ -13,6 +13,8 @@ function AddTodo({onCreate}) {
 
         if (value.trim()) {
             onCreate(value)
+            setValue('')
+
         }
     }
 
@@ -25,7 +27,7 @@ function AddTodo({onCreate}) {
 }
 
 AddTodo.propTypes = {
-    onCreate: Proptypes.func.isRequired
+    onCreate: Proptypes.func.isRequired,
 }
 
 export default AddTodo
