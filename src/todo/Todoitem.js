@@ -22,7 +22,7 @@ function Todoitem({todo, index, onChange}) {
         classes.push('done')
     }
     return (<li style={styles.li}>
-        <span>
+        <span className={classes.join( ' ')}>
             <input type="checkbox" style={styles.input} onChange={() => onChange(todo.id)}/>
             <strong>{index + 1}</strong>
             &nbsp;
