@@ -23,7 +23,7 @@ function Todoitem({todo, index, onChange}) {
     }
     return (<li style={styles.li}>
         <span className={classes.join( ' ')}>
-            <input type="checkbox" style={styles.input} onChange={() => onChange(todo.id)}/>
+            <input type="checkbox" checked={todo.completed} style={styles.input} onChange={() => onChange(todo.id)}/>
             <strong>{index + 1}</strong>
             &nbsp;
             {todo.title}
