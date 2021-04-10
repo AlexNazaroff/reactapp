@@ -6,10 +6,13 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '.5rem 1rem',
-        border: '1px solid #ccc',
+        padding: '.51rem 1rem',
+        border: '2px solid #ccc',
         borderRadius: '4px',
-        marginBottom: '5rem'
+        marginBottom: '2rem'
+    },
+    input: {
+        marginRight: '1rem'
     }
 }
 
@@ -17,10 +20,11 @@ const styles = {
 function Todoitem({todo, index}) {
     return (<li style={styles.li}>
         <span>
-            <input type="checkbox"/>
+            <input type="checkbox" style={styles.input}/>
             <strong>{index + 1}</strong>
+            &nbsp;
             {todo.title}
-            <button>&times;</button>
+            <button className='rm'>&times;</button>
 
 
         </span>
