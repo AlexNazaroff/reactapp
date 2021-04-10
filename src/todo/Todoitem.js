@@ -2,7 +2,7 @@ import React from 'react'
 import Proptypes from 'prop-types'
 
 const styles = {
-    li:{
+    li: {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -16,9 +16,11 @@ const styles = {
     }
 }
 
-
-function Todoitem({todo, index,onChange}) {
-    console.log('todo', todo)
+function Todoitem({todo, index, onChange}) {
+    const classes = []
+    if (todo.completed) {
+        classes.push('done')
+    }
     return (<li style={styles.li}>
         <span>
             <input type="checkbox" style={styles.input} onChange={() => onChange(todo.id)}/>
